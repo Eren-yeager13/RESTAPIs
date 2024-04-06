@@ -16,31 +16,20 @@
         <form action="/updatepost" method="POST">
 
             <label for="ID">ID</label>
-            <input type="number" name="id" id="id" placeholder="Enter Post ID here...">
+            <input type="number" name="id" id="id" placeholder="Enter Post ID here..."><br>
             <label for="title">Write Post Title</label>
-            <input type="text" name="title" id="title" placeholder="Enter Post title here...">
-            <label for="post-content">Post Content</label>
-            <textarea name="content" id="content" cols="30" rows="10" placeholder="Enter Content Here..."></textarea>
+            <input type="text" name="title" id="title" placeholder="Enter Post title here..."><br>
+            <label for="post-content">Post Content : </label><br>
+            <textarea name="content" id="content" cols="30" rows="10"
+                placeholder="Enter Content Here..."></textarea><br>
             <label for="category">Category</label>
-            <input type="text" id="category" name="category" placeholder="Enter Category">
+            <input type="text" id="category" name="category" placeholder="Enter Category"><br>
             <label for="tags">#Tags</label>
-            <input type="text" id="tags" name="tags" placeholder="Enter Tags Here">
+            <input type="text" id="tags" name="tags" placeholder="Enter Tags Here"><br>
             <button class="follow" type="submit">Update Now</button>
         </form>
 
     </div>
 </body>
-<script>
-    let parameter = '';
-    function setParam() {
-
-        parameter
-    }
-    document.getElementById('parameter').value;
-
-    function openURL(api) {
-        window.open(api + "/" + parameter);
-
-    }</script>
 
 </html>

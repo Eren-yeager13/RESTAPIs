@@ -72,10 +72,11 @@ app.post("/updatepost", (req, res) => {
   if (!post) {
     res.status(404).json({ message: "not found" });
   } else {
-    post.title = req.body.titel;
+    post.title = req.body.title;
     post.content = req.body.content;
     post.category = req.body.category;
     post.tags = req.body.tags.split(",");
+
     jsonfile.writeFile("./db/db.json", db, (err) => {
       if (err) {
         console.error(err);

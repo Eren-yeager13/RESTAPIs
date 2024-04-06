@@ -11,12 +11,16 @@
             <a href="/updateform"><button>Update Post</button></a>
             <button onclick="openURL('/deletepost')">Delete Post</button>
         </div><br>
-        <div class="btn-section">
-            <button onclick="openURL('/posts-c')">Posts By Category</button>
-            <button onclick="openURL('/posts-t')">Posts By tags</button>
-            <button onclick="openURL('/posts')">Post By ID</button>
-            <button onclick="openURL('/posts-title')">Post By Title</button>
-        </div><br>
         <button class="follow">Contact Me</button>
     </div>
 </body>
+
+<script>
+    let parameter = '';
+    function setParam() {
+        parameter = document.getElementById('parameter').value;
+    }
+    function openURL(api) {
+        window.open(api + "/" + parameter);
+    }
+</script>
